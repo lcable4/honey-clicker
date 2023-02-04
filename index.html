@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css"/>
+        <title>Honeybee Clicker</title>
+    </head>
+    <body>
+        <div class='container'>
+            <div class='rows'>
+                <div class='top-row'>
+                    <div class='top counter'>
+                        <p id='currentCount'>0</p>
+                        <p> Honey</p>
+                    </div>
+                    <div class='top hps'>
+                    <p id='hps-count'>0</p>
+                    <p>honey/second</p>
+                    </div>
+                    <div class="top bee">
+                        <img src="https://em-content.zobj.net/thumbs/160/apple/325/honeybee_1f41d.png" id="clicker"/>
+                        <p id="filler">Click the bee to play!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="rows">
+                <div class="header">Producers</div>
+                <div class="bottom-row shop">
+                    <div id="shop-button">        
+                        <button id= "flower-button" onclick="buyItem('flower')">
+                            <p>Purchase flowers </p>
+                            <p>cost: <span id="scalingFlowerPrice">50</span> honey </p>
+                            <p>+<span id="scalingFlowerAPS">1</span> honey per second</p>
+                            <p>flowers owned: <span id="flowers">0</span></p>
+                        </button>
+                    </div>
+                    <div id="shop-button">
+                        <button id="beehive-button" onclick="buyItem('beehive')">
+                            <p>Purchase beehive </p>
+                            <p>cost: <span id="scalingHivePrice">100</span> honey </p>
+                            <p>+<span id="scalingHiveAPS">1</span> honey per second</p>
+                            <p>beehives owned: <span id="beehive">0</span></p>
+                        </button>
+                    </div>
+                    <div id="shop-button">
+                        <button id="apiary-button" onclick="buyItem('apiary')">
+                            <p>Purchase apiary </p>
+                            <p>cost: <span id="scalingApiaryPrice">200</span> honey</p>
+                            <p>+<span id="scalingApiaryAPS">5</span> honey per second</p>
+                            <p>apiaries owned: <span id="apiary">0</span></p>
+                        </button>
+                    </div>
+                    <div id="shop-button">
+                        <button id="bee-house-button" onclick="buyItem('bee_house')">
+                            <p>Purchase bee house</p>
+                            <p>cost: <span id="scalingBeeHousePrice">400</span> honey</p>
+                            <p>+<span id="scalingBeeHouseAPS">15</span> honey per second</p>
+                            <p>bee houses owned: <span id="bee-house">0</span></p>
+                        </button>
+                    </div>
+                    <div id="shop-button">
+                        <button id="bee-science-button" onclick="buyItem('science')">
+                            <p>Bee science</p>
+                            <p>cost: <span id="scalingSciencePrice">800</span> honey</p>
+                            <p>+<span id="scalingScienceAPS">50</span> honey per second</p>
+                            <p>science level: <span id="science">0</span></p>
+                        </button>
+                    </div>
+                    <div id="shop-button">
+                        <button id="robotic-bees" onclick="buyItem('robots')">
+                            <p>Robotic bees</p>
+                            <p>cost: <span id="scalingRobotPrice">1600</span> honey</p>
+                            <p>+<span id="scalingRobotAPS">100</span> honey per second</p>
+                            <p>robots owned: <span id="robots">0</span></p>
+                        </button>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </body>
+    <script type="text/javascript" defer src="script.js"></script>
+</html>
